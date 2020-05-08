@@ -1,4 +1,3 @@
-
 def is_even(num: int) -> bool:
     """Check is the given number is even or not."""
     return num % 2 == 0
