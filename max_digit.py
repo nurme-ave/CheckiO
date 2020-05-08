@@ -1,4 +1,6 @@
 def max_digit(number: int) -> int:
+    """Determine which digit in the given number is the biggest."""
+    
     return int(max(str(number)))
 
 
