@@ -1,4 +1,3 @@
-
 def checkio(number: int) -> str:
     """
     Return:
