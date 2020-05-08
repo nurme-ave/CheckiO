@@ -1,4 +1,3 @@
-
 def split_pairs(a):
     """
     Split the string into pairs of two characters. If the string contains an odd number of characters,
