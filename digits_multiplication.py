@@ -1,4 +1,5 @@
 def checkio(number: int) -> int:
+    """Calculate the product of the digits excluding any zeroes."""
     convert_into_list = map(int, str(number))
     total = 1
     for num in convert_into_list:
