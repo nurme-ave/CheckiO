@@ -1,8 +1,6 @@
 
 def say_hi(name: str, age: int) -> str:
-    """
-        Hi!
-    """
+    """Greet the person."""
     return f"Hi. My name is {name} and I'm {age} years old"
 
 
