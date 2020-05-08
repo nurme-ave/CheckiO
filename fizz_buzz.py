@@ -1,5 +1,11 @@
 
 def checkio(number: int) -> str:
+    """
+    Return:
+    - "Fizz Buzz" if the number is divisible by 3 and by 5
+    - "Fizz" if the number is divisible by 3
+    - "Buzz" if the number is divisible by 5
+    """
     if number % 3 == 0 and number % 5 == 0:
         return 'Fizz Buzz'
     elif number % 3 == 0:
