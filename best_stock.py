@@ -1,4 +1,3 @@
-
 def best_stock(a):
     """Check which stocks cost more."""
     max_value = max(a.values())
