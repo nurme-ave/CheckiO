@@ -1,14 +1,12 @@
 def between_markers_2(text: str, begin: str, end: str) -> str:
     """
-        returns substring between two given markers
-    """
-
-    """
+    Returns substring between two given markers.
+    Conditions:
     The initial and final markers are always different.
-    If there is no initial marker, then the first character should be considered the beginning of a string.
-    If there is no final marker, then the last character should be considered the ending of a string.
-    If the initial and final markers are missing then simply return the whole string.
-    If the final marker comes before the initial marker, then return an empty string.
+    - if there is no initial marker, then the first character should be considered the beginning of a string
+    - if there is no final marker, then the last character should be considered the ending of a string
+    - if the initial and final markers are missing then simply return the whole string
+    - if the final marker comes before the initial marker, then return an empty string
     """
     if end not in text and begin not in text:
         return text
