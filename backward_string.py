@@ -1,5 +1,5 @@
 def backward_string(val: str) -> str:
-
+    """Reverse the string."""
     return val[::-1] if val else val
 
 
