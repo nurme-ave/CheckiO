@@ -1,5 +1,9 @@
 
 def split_pairs(a):
+    """
+    Split the string into pairs of two characters. If the string contains an odd number of characters,
+    then the missing second character of the final pair should be replaced with an underscore ('_').
+    """
     newlst = []
     split_in_pairs = [a[i:i + 2] for i in range(0, len(a), 2)]
 
