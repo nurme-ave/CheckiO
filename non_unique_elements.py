@@ -1,4 +1,3 @@
-
 def non_unique_elements(data: list) -> list:
     """Return a list consisting of only the non-unique elements in this list."""
     if len(data) == len(set(data)):
