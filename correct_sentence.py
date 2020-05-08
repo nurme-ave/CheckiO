@@ -1,7 +1,7 @@
 def correct_sentence(text):
     """
-        returns a corrected sentence which starts with a capital letter
-        and ends with a dot.
+    Return a corrected sentence which starts with a capital letter
+    and ends with a dot.
     """
     if text[0].islower() and text[-1] != '.':
         return text[0].upper() + text[1:] + '.'
@@ -15,7 +15,7 @@ def correct_sentence(text):
 
 if __name__ == '__main__':
     print("Example:")
-    print(correct_sentence("greetings, friends"))
-    print(correct_sentence("Greetings, friends"))
-    print(correct_sentence("hi."))
-    print(correct_sentence("welcome to New York"))
+    print(correct_sentence("greetings, friends"))   # Greetings, friends.
+    print(correct_sentence("Greetings, friends"))   # Greetings, friends.
+    print(correct_sentence("hi."))                  # Hi.
+    print(correct_sentence("welcome to New York"))  # Welcome to New York.
