@@ -1,4 +1,3 @@
-
 def mult_two(a, b):
     """Returns the product of two numbers."""
     return a * b
