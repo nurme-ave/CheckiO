@@ -1,4 +1,4 @@
-def checkio(number: int) -> int:
+def digits_multiplication(number: int) -> int:
     """Calculate the product of the digits excluding any zeroes."""
     convert_into_list = map(int, str(number))
     total = 1
@@ -8,8 +8,8 @@ def checkio(number: int) -> int:
     return total
 
 
-print(checkio(123405))
-print(checkio(123405) == 120)
-print(checkio(999) == 729)
-print(checkio(1000) == 1)
-print(checkio(1111) == 1)
+print(digits_multiplication(123405))
+print(digits_multiplication(123405) == 120)
+print(digits_multiplication(999) == 729)
+print(digits_multiplication(1000) == 1)
+print(digits_multiplication(1111) == 1)
