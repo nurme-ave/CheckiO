@@ -1,4 +1,5 @@
 def number_length(a: int) -> int:
+    """Return the length of the given number."""
     return len(str(a))
 
 
