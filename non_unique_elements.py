@@ -1,12 +1,6 @@
-"""
-Some hints
-You can use list.count(element) method for counting.
-Create new list with non-unique elements
-Loop over original list
-"""
-
 
 def non_unique_elements(data: list) -> list:
+    """Return a list consisting of only the non-unique elements in this list."""
     if len(data) == len(set(data)):
         return []
     else:
