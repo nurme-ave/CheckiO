@@ -1,4 +1,5 @@
 def beginning_zeros(number: str) -> int:
+    """Calculate how many zero digits ("0") are at the beginning of the given string."""
     count = 0
     for char in number:
         if number[0] == '0':
