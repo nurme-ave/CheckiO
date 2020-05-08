@@ -1,4 +1,5 @@
 def count_digits(text: str) -> int:
+    """Count the number of digits in a given string."""
     count = 0
     for char in text:
         if char.isdigit():
