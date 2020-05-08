@@ -1,4 +1,5 @@
 def backward_string_by_word(text: str) -> str:
+    """Return each word backwards."""
     text = list(text.split(" "))
     result = [word[::-1] for word in text]
 
