@@ -1,4 +1,8 @@
 def most_numbers(*args):
+    """
+    Find the difference between the maximum and minimum element.
+    For an empty argument list, the function should return 0.
+    """
     if len(args) > 1:
         if min(args) < 0 and max(args) < 0:
             return -(abs(max(args)) - abs(min(args)))
