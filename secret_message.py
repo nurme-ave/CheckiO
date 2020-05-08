@@ -1,6 +1,6 @@
 
 def find_message(text: str) -> str:
-    """Find a secret message"""
+    """Gather all capital letters in one word in the order that they appear in the text."""
     result = ""
     for char in text:
         if char.isupper():
