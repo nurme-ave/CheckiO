@@ -2,6 +2,7 @@ from typing import Iterable
 
 
 def remove_all_before(items: list, border: int) -> Iterable:
+    """Remove from the list all of the elements before the given one."""
     if border in items and len(set(items)) != 1:
         index = items.index(border)
         return items[index::]
