@@ -1,4 +1,5 @@
 def nearest_value(values: set, one: int):
+    """Find the nearest value to the given one."""
     values = list(sorted(values))
     if one in values:
         return one
