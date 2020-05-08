@@ -1,4 +1,8 @@
 def is_all_upper(text: str) -> bool:
+    """
+    Check if the string consists of all upper case letters.
+    Note: Digits, empty string etc should also return True.
+    """
     text = text.strip()
     if not text or text.isdigit():
         return True
