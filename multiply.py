@@ -4,6 +4,5 @@ def mult_two(a, b):
     return a * b
 
 
-print(mult_two(3, 2))
 print(mult_two(3, 2) == 6)
 print(mult_two(1, 0) == 0)
