@@ -4,8 +4,7 @@ def non_unique_elements(data: list) -> list:
     if len(data) == len(set(data)):
         return []
     else:
-        result = [elem for elem in data if data.count(elem) > 1]
-        return result
+        return [elem for elem in data if data.count(elem) > 1]
 
 
 print(non_unique_elements([1, 2, 3, 1, 3]))         # == [1, 3, 1, 3]
