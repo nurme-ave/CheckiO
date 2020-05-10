@@ -1,6 +1,6 @@
 def popular_words(text: str, words: list) -> dict:
     """
-    NOTE: This is a shorter version of 'popular_words_1.py' as I solved the challenged with a dictionary comprehension here.
+    NOTE: This is a shorter version of 'popular_words_1.py' as I solved the challenge with a dictionary comprehension here.
     
     Determine the popularity of certain words in the text.
     Conditions:
