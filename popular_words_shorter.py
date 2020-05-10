@@ -1,7 +1,6 @@
 def popular_words(text: str, words: list) -> dict:
     """
-    NOTE: This is a shorter version of 'popular_words_1.py' as I solved the challenge with a dictionary comprehension here.
-    
+    Note: I used a dictionary comprehension here which makes the solution significally shorter.
     Determine the popularity of certain words in the text.
     Conditions:
     - the words should be sought in all registers
