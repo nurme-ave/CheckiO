@@ -8,7 +8,6 @@ def popular_words(text: str, words: list) -> dict:
     - the search words are always indicated in the lowercase
     - if the word isn’t found even once, it has to be returned in the dictionary with 0 (zero) value
     """
-    d = {}
     text = text.lower().split()
     return {word: text.count(word) if word in words else 0 for word in words}
 
