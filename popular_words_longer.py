@@ -5,7 +5,9 @@ def popular_words(text: str, words: list) -> dict:
     - the words should be sought in all registers
     - the search words are always indicated in the lowercase
     - if the word isn’t found even once, it has to be returned in the dictionary with 0 (zero) value
-    """
+    
+    Previous solution:
+    
     d = {}
     text = text.lower().split()
     for word in words:
@@ -14,6 +16,11 @@ def popular_words(text: str, words: list) -> dict:
         else:
             d[word] = 0
     return d
+    """
+    
+    # New solution
+    text = text.lower().split()
+    return {word: text.count(word) if word in words else 0 for word in words}
 
 
 print(popular_words('''
