@@ -1,9 +1,18 @@
 def second_index(text: str, symbol: str) -> [int, None]:
-    """Returns the second index of a symbol in a given text."""
+    """
+    Returns the second index of a symbol in a given text
+
+    Previous solution:
+    
     pos = [pos for pos, char in enumerate(text) if char == symbol]
     if len(pos) >= 2:
         return pos[1]
     return None
+    """
+    
+    # New solution
+    pos = [pos for pos, char in enumerate(text) if char == symbol]
+    return pos[1] if len(pos) >= 2 else None
 
 
 if __name__ == '__main__':
