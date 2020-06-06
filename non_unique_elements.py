@@ -1,9 +1,16 @@
-def non_unique_elements(data: list) -> list:
-    """Return a list consisting of only the non-unique elements in this list."""
+"""
+Previous version:
+
     if len(data) == len(set(data)):
         return []
     else:
         return [elem for elem in data if data.count(elem) > 1]
+"""
+
+# New version
+def non_unique_elements(data: list) -> list:
+    
+    return [] if len(data) == len(set(data)) else [elem for elem in data if data.count(elem) > 1]
 
 
 print(non_unique_elements([1, 2, 3, 1, 3]))         # == [1, 3, 1, 3]
