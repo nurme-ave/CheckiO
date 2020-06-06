@@ -1,5 +1,5 @@
 """
-Previous version:
+Previous solution:
 
     if len(data) == len(set(data)):
         return []
@@ -7,7 +7,7 @@ Previous version:
         return [elem for elem in data if data.count(elem) > 1]
 """
 
-# New version
+# New solution
 def non_unique_elements(data: list) -> list:
     
     return [] if len(data) == len(set(data)) else [elem for elem in data if data.count(elem) > 1]
