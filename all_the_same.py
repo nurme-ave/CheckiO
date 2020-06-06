@@ -1,13 +1,13 @@
 def all_the_same(elements) -> bool:
     """Check if all elements in the given list are equal.
     
-    Previous version:
+    Previous solution:
     if len(elements) < 1:
         return True
     return len(elements) == elements.count(elements[0])
     """
     
-    # New version:
+    # New solution
     return True if len(elements) < 1 else (len(elements) == elements.count(elements[0]))
 
 
