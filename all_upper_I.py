@@ -1,6 +1,6 @@
 def is_all_upper(text: str) -> bool:
     """
-    Previous version:
+    Previous solution:
     
     text = text.strip()
     if not text or text.isdigit():
@@ -9,7 +9,7 @@ def is_all_upper(text: str) -> bool:
         return text.isupper()
     """
 
-    # New version
+    # New solution
     text = text.strip()
     return True if not text or text.isdigit() else text.isupper()
 
