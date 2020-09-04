@@ -3,8 +3,8 @@ from datetime import date
 
 def days_diff(a, b):
     """Find the difference in days between the given dates."""
-    start_date = date(a[0], a[1], a[2])
-    end_date = date(b[0], b[1], b[2])
+    start_date = date(*a)
+    end_date = date(*b)
     difference = end_date - start_date
     return abs(difference.days)
 
