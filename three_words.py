@@ -4,18 +4,14 @@ def three_words(words: str) -> bool:
     The words contains only letters. This program checks if the string contains three words in succession.
     """
 
-    is_word = []
-    to_list = list(words.split())
+    to_list = words.split()
 
-    if len(to_list) >= 3:
-        for word in to_list:
-            if word.isalpha():
-                is_word.append(word)
-                if len(is_word) >= 3:
-                    return True
-            else:
-                is_word = []
+    booleans = [to_list[i].isalpha() for i in range(len(to_list))]
 
+    if booleans:
+        for i in range(len(booleans) - 2):
+            if booleans[i] and booleans[i+1] and booleans[i+2]:
+                return True
     return False
 
 
